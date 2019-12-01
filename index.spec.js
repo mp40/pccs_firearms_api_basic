@@ -1,7 +1,13 @@
-const { wiringTest } = require('./index');
+const request = require("supertest");
+const { setupExpressServer } = require("./index");
 
-describe('wiring test',()=>{
-    it('should return string "working"',()=> {
-        expect(wiringTest()).toBe('working');
-    })
-})
+const app = setupExpressServer();
+
+describe("The API server", () => {
+  describe("GET /hello - returning text", () => {
+    it('should return text/html "world"', async () => {
+      const res = await request(app).get("/hello");
+      expect(res.text).toBe("world");
+    });
+  });
+});
