@@ -12,4 +12,10 @@ describe("The API server", () => {
       expect(JSON.parse(res.text)).toEqual({ results: guns });
     });
   });
+  describe("GET /1", () => {
+    it("should return a gun matching id 1", async () => {
+      const res = await request(app).get("/1");
+      expect(JSON.parse(res.text)).toEqual(guns[0]);
+    });
+  });
 });

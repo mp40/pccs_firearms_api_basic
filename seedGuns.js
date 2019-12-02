@@ -1,4 +1,5 @@
 const m1Garand = {
+  id: 1,
   name: "M1 Garand",
   kd: 11,
   aim: {
@@ -8,6 +9,7 @@ const m1Garand = {
 };
 
 const m1Carbine = {
+  id: 2,
   name: "M1 Carbine",
   kd: 5,
   aim: {
@@ -17,6 +19,7 @@ const m1Carbine = {
 };
 
 const m1911 = {
+  id: 3,
   name: "M1911A1",
   kd: 3,
   aim: {
