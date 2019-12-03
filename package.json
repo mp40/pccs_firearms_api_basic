@@ -5,7 +5,8 @@
   "repository": "https://github.com/mp40/pccs_firearms_api_basic.git",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node ./runServer.js"
   },
   "devDependencies": {
     "eslint": "^6.7.2",
