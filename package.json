@@ -6,7 +6,10 @@
   "license": "MIT",
   "scripts": {
     "test": "jest",
-    "start": "node ./runServer.js"
+    "start": "node ./runServer.js",
+    "migrate": "knex migrate:latest",
+    "rollback": "knex migrate:rollback",
+    "seed": "knex seed:run"
   },
   "devDependencies": {
     "eslint": "^6.7.2",
