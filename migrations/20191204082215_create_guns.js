@@ -9,10 +9,10 @@ exports.up = function(knex, Promise) {
     t.integer("kd")
       .notNullable()
       .index();
-    t.specificType("aim-ac", "integer[]")
+    t.specificType("aim_ac", "integer[]")
       .notNullable()
       .index();
-    t.specificType("aim-mod", "integer[]")
+    t.specificType("aim_mod", "integer[]")
       .notNullable()
       .index();
   });
